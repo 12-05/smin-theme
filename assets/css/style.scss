@@ -1,0 +1,983 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+$black: #000000;
+$white: #ffffff;
+$orange: #ff6c00;
+$grey: #333333;
+$wrapperSize: 1000px;
+$headerHeight: 65px;
+$headerHeightMobile: 50px;
+
+$mobile: 675px;
+
+@mixin fade {
+	transition: all 0.3s ease;
+	&:hover {
+		transition: all 0.3s ease;
+	}
+}
+@mixin bighead {
+	font-size: 66px;
+	margin: 0;
+	line-height: 1;
+	padding-bottom: 1rem;
+	font-weight: bold;
+
+	.orange {
+		color: $orange;
+	}
+	@media (max-width: $mobile) {
+		font-size: 36px;
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Ubuntu", sans-serif;
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	background: $white;
+	color: $grey;
+}
+
+.wrapped {
+	margin: 0 auto;
+	max-width: $wrapperSize;
+	padding: 150px 0;
+	@media (max-width: $mobile) {
+		padding: 80px 2rem;
+	}
+	h1 {
+		@include bighead;
+		position: relative;
+		padding-bottom: 2rem;
+		margin-bottom: 2rem;
+		&:after {
+			position: absolute;
+			bottom: 0;
+			display: block;
+			width: 75px;
+			height: 10px;
+			content: "";
+			background: $orange;
+			@media (max-width: $mobile) {
+				height: 5px;
+			}
+		}
+	}
+}
+
+p {
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+.header {
+	z-index: 999;
+	background: $black;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	width: 100%;
+	height: $headerHeight;
+	align-items: center;
+	padding-left: 1rem;
+	.hamburger {
+		margin-right: 1rem;
+		display: none;
+		appearance: none;
+		border: 0px;
+		height: 3px;
+		width: 28px;
+		position: relative;
+		&:after,
+		&:before {
+			content: "";
+			height: 3px;
+			width: 28px;
+			background: $white;
+			display: block;
+			position: absolute;
+			top: -8px;
+			left: 0;
+		}
+		&:after {
+			top: auto;
+			bottom: -8px;
+		}
+		@media (max-width: $mobile) {
+			display: block;
+		}
+		.nav-visible & {
+			z-index: 9999;
+			background: $black;
+			&:after {
+				@include fade;
+				transform: rotate(-45deg);
+				bottom: 0;
+			}
+			&:before {
+				@include fade;
+
+				top: 0;
+				transform: rotate(45deg);
+			}
+		}
+	}
+
+	.logo {
+		display: block;
+		img {
+			height: 20px;
+			@media (max-width: $mobile) {
+				height: 16px;
+			}
+		}
+	}
+	.toolbar {
+		display: flex;
+		font-size: 16px;
+
+		.header-buttons {
+			display: flex;
+			@media (max-width: $mobile) {
+				display: none;
+			}
+			a {
+				border-left: 1px solid rgba(255, 255, 255, 0.2);
+				height: $headerHeight;
+				width: $headerHeight;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				@include fade;
+				&:hover {
+					background: rgba(255, 255, 255, 0.2);
+					img {
+						@include fade;
+						transform: scale(1.2);
+					}
+				}
+			}
+		}
+
+		#primary_menu {
+			margin: 0;
+			padding: 0;
+			display: flex;
+			li {
+				list-style: none;
+				a {
+					position: relative;
+					height: $headerHeight;
+					padding: 1rem 2rem;
+					justify-content: center;
+					align-items: center;
+					display: flex;
+					color: $white;
+					text-decoration: none;
+					font-weight: bold;
+					@include fade;
+					&:hover {
+						background: rgba(255, 255, 255, 0.2);
+					}
+				}
+				&.current-menu-item a:after {
+					content: "";
+					height: 5px;
+					width: 20px;
+					background: $white;
+					border-radius: 3px;
+					position: absolute;
+					bottom: 10px;
+				}
+			}
+		}
+		@media (max-width: $mobile) {
+			.menu-hauptmenue-container {
+				z-index: 999;
+				display: none;
+				position: fixed;
+				background: $black;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				font-size: 20px;
+				align-items: center;
+				justify-content: center;
+				ul {
+					justify-content: center;
+
+					display: flex;
+					flex-direction: column;
+				}
+				.nav-visible & {
+					display: flex;
+				}
+			}
+		}
+	}
+}
+
+.footer {
+	background: $black;
+	padding: 150px 10vw;
+	@media (max-width: $mobile) {
+		grid-template-columns: 1fr;
+	}
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	color: $white;
+	font-size: 20px;
+	grid-gap: 3rem;
+	> div > h3 {
+		color: $white;
+
+		margin-bottom: 2rem;
+		font-size: 20px;
+		position: relative;
+		padding-bottom: 1rem;
+		&:after {
+			display: block;
+			left: 0;
+			width: 75px;
+			height: 5px;
+			content: "";
+			background: $white;
+			position: absolute;
+			bottom: 0;
+		}
+	}
+	#footer_menu {
+		margin: 0;
+		padding: 0;
+		text-decoration: none;
+		li {
+			list-style: none;
+			margin-bottom: 1rem;
+			a {
+				color: $white;
+				text-decoration: none;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	.news-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 3rem;
+		@media (max-width: $mobile) {
+			grid-template-columns: 1fr;
+		}
+		a {
+			display: block;
+			color: #fff;
+			text-decoration: none;
+			@include fade;
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+		h3 {
+			margin: 0;
+			color: $white;
+			margin-bottom: 0.5rem;
+		}
+		figure {
+			margin: 0;
+			margin-bottom: 1rem;
+			position: relative;
+			.thumb {
+				background-size: cover;
+				height: 200px;
+
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+
+			.view {
+				position: absolute;
+				bottom: -1rem;
+				max-width: 100%;
+				right: 1rem;
+			}
+		}
+	}
+	@media (max-width: $mobile) {
+		grid-template-columns: 1fr;
+	}
+}
+
+.block {
+	font-family: "Ubuntu", "sans-serif";
+}
+
+main {
+	overflow: hidden;
+	padding-top: 65px;
+}
+
+.block-text {
+	max-width: $wrapperSize;
+	line-height: 1.8;
+	margin: 0 auto;
+	font-size: 20px;
+	padding: 100px 2rem;
+
+	.content {
+		margin-left: 150px;
+		@media (max-width: $mobile) {
+			margin-left: 0;
+		}
+	}
+	p {
+		font-size: 20px;
+	}
+	h2 {
+		@include bighead;
+		position: relative;
+		margin-bottom: 3rem;
+		padding-bottom: 3rem;
+
+		&:after {
+			position: absolute;
+			bottom: 0;
+			display: block;
+			width: 75px;
+			height: 10px;
+			content: "";
+			background: $orange;
+			@media (max-width: $mobile) {
+				height: 5px;
+			}
+		}
+	}
+}
+
+.block-slider {
+	height: calc(100vh - 65px);
+	overflow: hidden;
+	.slide {
+		.inner {
+			height: calc(100vh - 65px);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+
+			overflow: hidden;
+			.bg {
+				position: absolute;
+				height: 100%;
+
+				width: 100%;
+				background-size: cover;
+				background-position: center;
+			}
+			.orange-bg {
+				&:before {
+					content: "";
+					position: absolute;
+					height: 70%;
+					width: 70%;
+					top: 0;
+					right: 0;
+					opacity: 0.5;
+					background: $orange;
+					z-index: 10;
+					mix-blend-mode: overlay;
+					z-index: 10;
+				}
+				&:after {
+					content: "";
+					position: absolute;
+					height: 70%;
+					width: 70%;
+					left: 0;
+					bottom: 0;
+					opacity: 0.5;
+					background: $orange;
+					z-index: 10;
+					mix-blend-mode: overlay;
+					z-index: 10;
+				}
+			}
+
+			.content {
+				position: relative;
+				z-index: 10;
+				text-align: center;
+				color: #fff;
+				padding: 2rem;
+				.headline {
+					@include bighead;
+					.orange {
+						color: $black;
+					}
+				}
+				.subline {
+					font-size: 24px;
+					font-weight: bold;
+				}
+			}
+			&:after {
+				content: "";
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				background: rgba(0, 0, 0, 0.2);
+				left: 0;
+				top: 0;
+			}
+		}
+	}
+	.slick-arrow {
+		position: absolute;
+		z-index: 99;
+		top: 50%;
+		transform: translateY(-50%);
+		height: 50px;
+		width: 50px;
+		appearance: none;
+		border: 0;
+		background-color: transparent;
+		font-size: 0;
+		background-image: url("../../img/arrow.svg");
+		background-size: contain;
+		background-position: center;
+		transform-origin: center;
+		@media (max-width: $mobile) {
+			width: 25px;
+			height: 25px;
+		}
+		&.slick-next {
+			right: 2rem;
+			@media (max-width: $mobile) {
+				right: 1rem;
+			}
+			transform: scaleX(-1) translateY(-50%);
+		}
+	}
+	.slick-dots {
+		position: absolute;
+		display: flex;
+		list-style: none;
+		width: 100%;
+		justify-content: center;
+		z-index: 99;
+		bottom: 0;
+		button {
+			background: transparent;
+			appearance: none;
+			font-size: 0;
+			border: 0;
+			height: 12px;
+			width: 12px;
+			border-radius: 50%;
+			background-color: rgba(255, 255, 255, 0.25);
+			margin: 0.25rem;
+		}
+		.slick-active button {
+			height: 16px;
+			width: 16px;
+			background: #fff;
+		}
+	}
+}
+
+@keyframes slideIn {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+@keyframes slideInRight {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideUp {
+	0% {
+		opacity: 0;
+		transform: translateY(100%);
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.orange-bg:before {
+}
+.orange-bg:after {
+}
+
+.slick-active .orange-bg:before {
+	animation: slideInRight 2s;
+}
+.slick-active .orange-bg:after {
+	animation: slideIn 2s;
+}
+
+.slick-active .content {
+	animation: slideUp 2s;
+}
+
+.block-team {
+	background: $black;
+	color: $white;
+	padding: 100px 0px;
+	@media (max-width: $mobile) {
+		padding: 100px 2rem;
+	}
+	.inner {
+		margin: 0 auto;
+		max-width: $wrapperSize;
+		h2 {
+			@include bighead;
+			margin-bottom: 3rem;
+			padding-bottom: 3rem;
+			position: relative;
+			&:after {
+				position: absolute;
+				bottom: 0;
+				display: block;
+				width: 75px;
+				height: 10px;
+				content: "";
+				background: $white;
+				@media (max-width: $mobile) {
+					height: 5px;
+				}
+			}
+		}
+		.team-grid {
+			margin-left: 8rem;
+			display: grid;
+			grid-gap: 8rem;
+			grid-template-columns: 1fr 1fr;
+			@media (max-width: $mobile) {
+				margin-left: 0;
+				grid-template-columns: 1fr;
+			}
+			h3 {
+				font-size: 32px;
+			}
+			.member {
+				color: $white;
+				text-decoration: none;
+				@include fade;
+				&:hover {
+					transform: scale(1.05);
+				}
+				figure {
+					margin: 0;
+					width: 100%;
+					position: relative;
+					.profile {
+						width: 100%;
+						height: auto;
+					}
+					.add {
+						position: absolute;
+						bottom: 0;
+						left: 1rem;
+						transform: translateY(50%);
+					}
+				}
+			}
+		}
+	}
+}
+
+.block-portfolio {
+	padding: 150px 10vw;
+	text-align: center;
+	@media (max-width: $mobile) {
+		padding: 100px 2rem;
+	}
+	h2 {
+		max-width: $wrapperSize;
+
+		@include bighead;
+		margin: 0 auto;
+		position: relative;
+		padding-bottom: 2rem;
+		margin-bottom: 2rem;
+		&:after {
+			position: absolute;
+			bottom: 0;
+			display: block;
+			width: 75px;
+			height: 10px;
+			content: "";
+			left: 50%;
+			transform: translateX(-50%);
+			background: $orange;
+			@media (max-width: $mobile) {
+				height: 5px;
+			}
+		}
+	}
+	.text {
+		max-width: $wrapperSize;
+
+		margin: 0 auto;
+		margin-bottom: 100px;
+	}
+	.portfolio {
+		text-align: left;
+		display: grid;
+		grid-gap: 8rem;
+		grid-template-columns: 1fr 1fr;
+		@media (max-width: $mobile) {
+			display: block;
+			margin-bottom: 2rem;
+			grid-template-columns: 1fr;
+		}
+		h3 {
+			margin-bottom: 2rem;
+			font-size: 24px;
+		}
+	}
+	.grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 2rem;
+		width: 100%;
+		@media (max-width: $mobile) {
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 1rem;
+		}
+		a {
+			display: block;
+			padding-bottom: 100%;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			@include fade;
+			&:hover {
+				transform: scale(1.05);
+			}
+			&.unternehmen {
+				border: 1px solid #ccc;
+				background-size: 80%;
+			}
+		}
+	}
+}
+
+.wp-block {
+	max-width: 100% !important;
+}
+
+.block-bild {
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	&.bild-wrapped {
+		max-width: $wrapperSize;
+		margin: auto;
+	}
+	img {
+		object-fit: cover;
+		object-position: center;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+	}
+}
+
+.block-block {
+	.content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		padding: 100px 10vw;
+		.text a {
+			color: $white;
+		}
+	}
+	h2 {
+		@include bighead;
+	}
+	.button {
+		display: inline-block;
+		background: $white;
+		padding: 0.5rem 1rem;
+		border-radius: 3px;
+		text-decoration: none;
+		color: $black;
+		margin-top: 1rem;
+		@include fade;
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+	&.schwarz {
+		background: $black;
+		color: $white;
+	}
+
+	&.orange {
+		background: $orange;
+		color: $white;
+	}
+	&.weiss {
+		.button {
+			background: $black;
+			color: $white;
+		}
+	}
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	min-height: 50vh;
+
+	.img {
+		position: relative;
+		img {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+	&.image_right .content {
+		grid-column: 1;
+		grid-row: 1;
+	}
+	@media (max-width: $mobile) {
+		display: grid;
+		grid-template-columns: 1fr;
+		.content {
+			grid-column: 1;
+			grid-row: 2;
+		}
+		&.image_right .content {
+			grid-column: 1;
+			grid-row: 2;
+		}
+		.img {
+			height: 30vh;
+			grid-column: 1;
+			grid-row: 1;
+		}
+	}
+}
+
+.loop-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 2rem;
+	@media (max-width: $mobile) {
+		grid-template-columns: 1fr;
+	}
+	a {
+		@include fade;
+		&:hover {
+			transform: scale(1.05);
+		}
+		text-decoration: none;
+		color: $black;
+		img {
+			width: 100%;
+			height: 300px;
+			object-fit: cover;
+			margin-bottom: 1rem;
+		}
+		.date {
+			color: #ccc;
+		}
+		h3 {
+			font-size: 32px;
+			margin: 0;
+			margin-bottom: 1.5rem;
+		}
+		.description {
+			color: #666;
+		}
+	}
+}
+
+.single {
+	.date {
+		color: #ccc;
+	}
+	.wrapped {
+		padding: 75px 0px;
+		@media (max-width: $mobile) {
+			padding: 75px 2rem;
+		}
+	}
+	.thumbnail {
+		max-height: 400px;
+		width: 100%;
+		object-fit: cover;
+		margin-bottom: 2rem;
+	}
+}
+
+.smin-portfolio {
+	background: #f3f3f3;
+	padding-bottom: 100px;
+	.service-head {
+		margin-bottom: 0.5rem;
+		display: block;
+	}
+	.link {
+		background: $black;
+		color: #fff;
+		width: 100%;
+		padding: 0.5rem 1rem;
+		display: inline-block;
+		border-radius: 5px;
+		text-decoration: none;
+		margin-bottom: 2rem;
+		@include fade;
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		li {
+			margin-right: 0.5rem;
+			display: inline-block;
+			background: rgba(0, 0, 0, 0.1);
+			padding: 0.5rem 1rem;
+			border-radius: 5px;
+			margin-bottom: 0.5rem;
+			list-style: none;
+		}
+	}
+	.titelbild {
+		height: 50vh;
+		width: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+	h1 {
+		margin-top: 0;
+		font-size: 48px;
+	}
+	.profile {
+		background-color: #fff;
+		position: absolute;
+		height: 225px;
+		width: 225px;
+		margin-top: -250px;
+		overflow: hidden;
+		@media (max-width: $mobile) {
+			height: 75px;
+			width: 75px;
+			margin-top: -80px;
+		}
+		img {
+			margin: 0;
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.content {
+		display: grid;
+		grid-template-columns: 225px 1fr;
+		grid-gap: 2rem;
+		padding-top: 100px;
+		margin: 0 auto;
+		max-width: 1200px;
+		@media (max-width: $mobile) {
+			padding: 2rem;
+			grid-template-columns: 1fr;
+		}
+	}
+	.text {
+	}
+}
+
+.smin-unternehmen {
+	.profile {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		img {
+			width: 80%;
+			height: 80%;
+			object-fit: contain;
+		}
+	}
+}
+
+.smin-person {
+	max-width: $wrapperSize;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 2fr 3fr;
+	grid-gap: 4rem;
+	padding: 150px 0;
+	@media (max-width: $mobile) {
+		padding: 75px 2rem;
+		grid-template-columns: 1fr;
+		.info {
+			margin-bottom: 2rem;
+			grid-row: 2;
+		}
+		.main {
+			grid-row: 1;
+		}
+	}
+	figure {
+		margin: 0;
+		margin-bottom: 2rem;
+		img {
+			width: 100%;
+			@media (max-width: $mobile) {
+				grid-template-columns: 1fr;
+			}
+		}
+	}
+	h1 {
+		@include bighead;
+		position: relative;
+		margin-bottom: 2rem;
+		padding-bottom: 2rem;
+		&:after {
+			position: absolute;
+			bottom: 0;
+			display: block;
+			width: 75px;
+			height: 10px;
+			content: "";
+			background: $orange;
+			@media (max-width: $mobile) {
+				height: 5px;
+			}
+		}
+	}
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		strong {
+			display: inline-block;
+			margin-right: 2rem;
+		}
+	}
+}
