@@ -64,10 +64,13 @@
 	});
 	document.addEventListener("mousemove", function (e) {
 		let body = document.querySelector("body");
-		let circle = document.getElementById("divtest");
+		let one = jQuery("#.orange-bg .one");
+		let two = jQuery("#.orange-bg .two");
+		var width = document.body.clientWidth;
+
 		let left = e.offsetX;
 		let top = e.offsetY;
-		circle.style.left = left + "px";
-		circle.style.top = top + "px";
+		one.style.width = left + "px";
+		two.style.width = width - left + "px";
 	});
 })(jQuery);

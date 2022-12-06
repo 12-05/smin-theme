@@ -62,10 +62,12 @@
   });
   document.addEventListener("mousemove", function (e) {
     var body = document.querySelector("body");
-    var circle = document.getElementById("divtest");
+    var one = jQuery("#.orange-bg .one");
+    var two = jQuery("#.orange-bg .two");
+    var width = document.body.clientWidth;
     var left = e.offsetX;
     var top = e.offsetY;
-    circle.style.left = left + "px";
-    circle.style.top = top + "px";
+    one.style.width = left + "px";
+    two.style.width = width - left + "px";
   });
 })(jQuery);
