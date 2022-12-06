@@ -65,9 +65,9 @@
     var one = jQuery(".orange-bg .one");
     var two = jQuery(".orange-bg .two");
     var width = document.body.clientWidth;
-    var left = e.offsetX;
+    var left = window.pageYOffset;
     var top = e.offsetY;
-    one.css("transform", "scaleX(" + 2 - left / width + ")");
-    two.css("transform", "scaleX(" + 2 - (width - left) / width + ")");
+    one.css("transform", "scaleX(" + left / width + ")");
+    two.css("transform", "scaleX(" + (width - left) / width + ")");
   });
 })(jQuery);
