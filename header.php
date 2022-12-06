@@ -1,7 +1,7 @@
 <html>
     <head>
         <?php wp_head();?>
-        <title><?php wp_title(''); ?></title>
+        <title><?php wp_title('&raquo;', 'true', 'right'); ?> <?php bloginfo(' name'); ?></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             :root {
