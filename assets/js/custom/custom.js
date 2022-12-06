@@ -70,7 +70,7 @@
 
 		let left = e.offsetX;
 		let top = e.offsetY;
-		two.css("width", left + "px");
-		one.css("width", width - left + "px");
+		two.css("width", two.width() + left / 10 + "px");
+		one.css("width", one.width() + (width - left) / 10 + "px");
 	});
 })(jQuery);
