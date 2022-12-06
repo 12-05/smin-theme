@@ -380,6 +380,8 @@ main {
 				width: 100%;
 				background-size: cover;
 				background-position: center;
+				-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+				filter: grayscale(100%);
 			}
 			.orange-bg {
 				&:before {
