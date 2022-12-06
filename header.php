@@ -3,7 +3,11 @@
         <?php wp_head();?>
         <title><?php wp_title(''); ?></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <style>
+            :root {
+            --main-color: <?php echo get_field('farbe', 'option');?>
+            }
+        </style>
     </head>
     <body <?php body_class();?>>
         <header class="header" role="header">
