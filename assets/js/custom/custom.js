@@ -71,7 +71,7 @@
 		let left = e.offsetX;
 		let top = e.offsetY;
 
-		two.css("width", width * 0.7 - left / 10 + "px");
-		one.css("width", width * 0.7 - (width - left) / 10 + "px");
+		one.css("width", width * 0.7 - left / 10 + "px");
+		two.css("width", width * 0.7 - (width - left) / 10 + "px");
 	});
 })(jQuery);
