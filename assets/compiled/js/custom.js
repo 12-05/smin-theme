@@ -68,6 +68,6 @@
     var left = window.pageYOffset;
     var top = e.offsetY;
     one.css("transform", "scaleX(" + left / width + ")");
-    two.css("transform", "scaleX(" + (width - left) / width + ")");
+    two.css("transform", "scaleX(" + left / width + ")");
   });
 })(jQuery);
