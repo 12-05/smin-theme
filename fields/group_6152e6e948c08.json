@@ -109,7 +109,7 @@
 			"key": "field_61532a06sss796da",
 			"label": "Farbe",
 			"name": "farbe",
-			"type": "color",
+			"type": "color_picker",
 			"instructions": "",
 			"required": 0,
 			"conditional_logic": 0,
