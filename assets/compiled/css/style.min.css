@@ -62,7 +62,7 @@ main{overflow:hidden;padding-top:65px}
 .block-slider .slide .inner .content{position:relative;z-index:10;text-align:center;color:#fff;padding:2rem}
 .block-slider .slide .inner .content .headline{font-size:66px;margin:0;line-height:1;padding-bottom:1rem;font-weight:bold;color:var(--dark-color)}
 .block-slider .slide .inner .content .headline .orange{color:var(--main-color)}
-.block-slider .slide .inner .content .headline .orange{color:var(--dark-color)}
+.block-slider .slide .inner .content .headline .orange{color:var(--main-color)}
 .block-slider .slide .inner .content .subline{font-size:24px;font-weight:bold}
 .block-slider .slide .inner:after{content:"";height:100%;width:100%;position:absolute;background:rgba(0,0,0,0.2);left:0;top:0}
 .block-slider .slick-arrow{position:absolute;z-index:99;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);height:50px;width:50px;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:0;background-color:transparent;font-size:0;background-image:url("../../img/arrow.svg");background-size:contain;background-position:center;-webkit-transform-origin:center;transform-origin:center}

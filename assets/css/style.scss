@@ -418,8 +418,9 @@ main {
 				padding: 2rem;
 				.headline {
 					@include bighead;
+
 					.orange {
-						color: $black;
+						color: $orange;
 					}
 				}
 				.subline {
