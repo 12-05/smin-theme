@@ -67,7 +67,7 @@
     var width = document.body.clientWidth;
     var left = e.offsetX;
     var top = e.offsetY;
-    one.style.width = left + "px";
-    two.style.width = width - left + "px";
+    one.css("width", left + "px");
+    two.css("width", width - left + "px");
   });
 })(jQuery);
