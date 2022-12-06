@@ -384,7 +384,7 @@ main {
 				filter: grayscale(100%);
 			}
 			.orange-bg {
-				position: relative;
+				position: absolute;
 				height: calc(100vh - 65px);
 				width: 100vw;
 				&:before {
