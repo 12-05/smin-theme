@@ -97,9 +97,9 @@ main{overflow:hidden;padding-top:65px}
 .block-portfolio .grid{display:grid;grid-template-columns:1fr 1fr 1fr;grid-gap:2rem;width:100%}
 .block-portfolio .grid a{display:block;background:#eee;padding-bottom:100%;background-size:cover;background-position:center;background-repeat:no-repeat;position:relative;-webkit-transition:all .3s ease;transition:all .3s ease}
 .block-portfolio .grid a:hover{-webkit-transition:all .3s ease;transition:all .3s ease}
-.block-portfolio .grid a .inner{height:100%;width:100%;position:absolute;background:var(--main-color);color:#fff;-webkit-box-sizing:border-box;box-sizing:border-box;opacity:0;-webkit-transition:all .3s ease;transition:all .3s ease}
+.block-portfolio .grid a .inner{height:100%;width:100%;position:absolute;background:var(--main-color);color:#fff;-webkit-box-sizing:border-box;box-sizing:border-box;opacity:0;-webkit-transition:all .3s ease;transition:all .3s ease;padding:1rem;font-weight:bold;font-size:.75rem}
 .block-portfolio .grid a:hover{-webkit-transform:scale(1.05);transform:scale(1.05)}
-.block-portfolio .grid a:hover .inner{-webkit-transition:all .3s ease;transition:all .3s ease;opacity:1}
+.block-portfolio .grid a:hover .inner{-webkit-transition:all .3s ease;transition:all .3s ease;opacity:.9}
 .block-portfolio .grid a.unternehmen{border:1px solid #ccc;background-size:80%}
 .wp-block{max-width:100% !important}
 .block-bild{overflow:hidden;position:relative;display:-webkit-box;display:-ms-flexbox;display:flex}

@@ -13,7 +13,7 @@
                     <?php if(!$thumbnailURL) continue;?>
                     <a class="immobilie" style="background-image:url(<?php echo $thumbnailURL;?>)" href="<?php echo get_permalink($immobilie->ID);?>">
                     <div class="inner">
-                            <?php echo get_the_title($company->ID);?>
+                            <?php echo get_the_title($immobilie->ID);?>
                         </div>
                     </a>
                     <?php endforeach;endif;?>

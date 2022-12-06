@@ -691,13 +691,16 @@ main {
 				box-sizing: border-box;
 				opacity: 0;
 				transition: all 0.3s ease;
+				padding: 1rem;
+				font-weight: bold;
+				font-size: 0.75rem;
 			}
 			&:hover {
 				transform: scale(1.05);
 				.inner {
 					transition: all 0.3s ease;
 
-					opacity: 1;
+					opacity: 0.9;
 				}
 			}
 			&.unternehmen {
