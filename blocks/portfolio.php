@@ -20,7 +20,7 @@
            <div class="grid">
                 <?php $unternehmen = get_field('unternehmen');
                     if($unternehmen):foreach($unternehmen as $company):?>
-                    <a class="unternehmen" style="background-image:url(<?php echo wp_get_attachment_image_src(get_field('logo', $company->ID), 'medium')[0];?>)" href="<?php echo get_permalink($company->ID);?>">
+                    <a class="unternehmen" style="background-image:url(<?php echo wp_get_attachment_image_src(get_field('logo', $company->ID), 'full')[0];?>)" href="<?php echo get_permalink($company->ID);?>">
                         
                     </a>
                     <?php endforeach;endif;?>
