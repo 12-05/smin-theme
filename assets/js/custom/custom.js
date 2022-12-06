@@ -21,11 +21,11 @@
 		reset: true,
 	});
 	ScrollReveal().reveal(".grid .immobilie", {
-		interval: 200,
+		interval: 50,
 		reset: true,
 	});
 	ScrollReveal().reveal(".grid .unternehmen", {
-		interval: 200,
+		interval: 50,
 		reset: true,
 	});
 
