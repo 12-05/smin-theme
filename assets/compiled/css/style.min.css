@@ -7,11 +7,11 @@ body{font-family:"Ubuntu",sans-serif;font-size:20px;margin:0;padding:0;backgroun
 .wrapped h1 .orange{color:var(--main-color)}
 .wrapped h1:after{position:absolute;bottom:0;display:block;width:75px;height:10px;content:"";background:var(--main-color)}
 p{font-size:20px;line-height:1.5}
-.header{z-index:999;background:#000;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;position:fixed;width:100%;height:65px;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding-left:1rem}
+.header{z-index:999;background:var(--dark-color);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;position:fixed;width:100%;height:65px;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding-left:1rem}
 .header .hamburger{margin-right:1rem;display:none;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:0;height:3px;width:28px;position:relative}
 .header .hamburger:after,.header .hamburger:before{content:"";height:3px;width:28px;background:#fff;display:block;position:absolute;top:-8px;left:0}
 .header .hamburger:after{top:auto;bottom:-8px}
-.nav-visible .header .hamburger{z-index:9999;background:#000}
+.nav-visible .header .hamburger{z-index:9999;background:var(--dark-color)}
 .nav-visible .header .hamburger:after{-webkit-transition:all .3s ease;transition:all .3s ease;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);bottom:0}
 .nav-visible .header .hamburger:after:hover{-webkit-transition:all .3s ease;transition:all .3s ease}
 .nav-visible .header .hamburger:before{-webkit-transition:all .3s ease;transition:all .3s ease;top:0;-webkit-transform:rotate(45deg);transform:rotate(45deg)}
@@ -31,7 +31,7 @@ p{font-size:20px;line-height:1.5}
 .header .toolbar #primary_menu li a:hover{-webkit-transition:all .3s ease;transition:all .3s ease}
 .header .toolbar #primary_menu li a:hover{background:rgba(255,255,255,0.2)}
 .header .toolbar #primary_menu li.current-menu-item a:after{content:"";height:5px;width:20px;background:#fff;border-radius:3px;position:absolute;bottom:10px}
-.footer{background:#000;padding:150px 10vw;display:grid;grid-template-columns:1fr 2fr 1fr;color:#fff;font-size:20px;grid-gap:3rem}
+.footer{background:var(--dark-color);padding:150px 10vw;display:grid;grid-template-columns:1fr 2fr 1fr;color:#fff;font-size:20px;grid-gap:3rem}
 .footer>div>h3{color:#fff;margin-bottom:2rem;font-size:20px;position:relative;padding-bottom:1rem}
 .footer>div>h3:after{display:block;left:0;width:75px;height:5px;content:"";background:#fff;position:absolute;bottom:0}
 .footer #footer_menu{margin:0;padding:0;text-decoration:none}
@@ -62,7 +62,7 @@ main{overflow:hidden;padding-top:65px}
 .block-slider .slide .inner .content{position:relative;z-index:10;text-align:center;color:#fff;padding:2rem}
 .block-slider .slide .inner .content .headline{font-size:66px;margin:0;line-height:1;padding-bottom:1rem;font-weight:bold}
 .block-slider .slide .inner .content .headline .orange{color:var(--main-color)}
-.block-slider .slide .inner .content .headline .orange{color:#000}
+.block-slider .slide .inner .content .headline .orange{color:var(--dark-color)}
 .block-slider .slide .inner .content .subline{font-size:24px;font-weight:bold}
 .block-slider .slide .inner:after{content:"";height:100%;width:100%;position:absolute;background:rgba(0,0,0,0.2);left:0;top:0}
 .block-slider .slick-arrow{position:absolute;z-index:99;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);height:50px;width:50px;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:0;background-color:transparent;font-size:0;background-image:url("../../img/arrow.svg");background-size:contain;background-position:center;-webkit-transform-origin:center;transform-origin:center}
@@ -73,7 +73,7 @@ main{overflow:hidden;padding-top:65px}
 .slick-active .orange-bg:before{-webkit-animation:slideInRight 2s;animation:slideInRight 2s}
 .slick-active .orange-bg:after{-webkit-animation:slideIn 2s;animation:slideIn 2s}
 .slick-active .content{-webkit-animation:slideUp 2s;animation:slideUp 2s}
-.block-team{background:#000;color:#fff;padding:100px 0}
+.block-team{background:var(--dark-color);color:#fff;padding:100px 0}
 .block-team .inner{margin:0 auto;max-width:1000px}
 .block-team .inner h2{font-size:66px;margin:0;line-height:1;padding-bottom:1rem;font-weight:bold;margin-bottom:3rem;padding-bottom:3rem;position:relative}
 .block-team .inner h2 .orange{color:var(--main-color)}
@@ -107,17 +107,17 @@ main{overflow:hidden;padding-top:65px}
 .block-block .content .text a{color:#fff}
 .block-block h2{font-size:66px;margin:0;line-height:1;padding-bottom:1rem;font-weight:bold}
 .block-block h2 .orange{color:var(--main-color)}
-.block-block .button{display:inline-block;background:#fff;padding:.5rem 1rem;border-radius:3px;text-decoration:none;color:#000;margin-top:1rem;-webkit-transition:all .3s ease;transition:all .3s ease}
+.block-block .button{display:inline-block;background:#fff;padding:.5rem 1rem;border-radius:3px;text-decoration:none;color:var(--dark-color);margin-top:1rem;-webkit-transition:all .3s ease;transition:all .3s ease}
 .block-block .button:hover{-webkit-transition:all .3s ease;transition:all .3s ease}
 .block-block .button:hover{-webkit-transform:scale(1.1);transform:scale(1.1)}
-.block-block.schwarz{background:#000;color:#fff}
+.block-block.schwarz{background:var(--dark-color);color:#fff}
 .block-block.orange{background:var(--main-color);color:#fff}
-.block-block.weiss .button{background:#000;color:#fff}
+.block-block.weiss .button{background:var(--dark-color);color:#fff}
 .block-block .img{position:relative}
 .block-block .img img{position:absolute;width:100%;height:100%;-o-object-fit:cover;object-fit:cover;-o-object-position:center;object-position:center}
 .block-block.image_right .content{grid-column:1;grid-row:1}
 .loop-grid{display:grid;grid-template-columns:1fr 1fr;grid-gap:2rem}
-.loop-grid a{-webkit-transition:all .3s ease;transition:all .3s ease;text-decoration:none;color:#000}
+.loop-grid a{-webkit-transition:all .3s ease;transition:all .3s ease;text-decoration:none;color:var(--dark-color)}
 .loop-grid a:hover{-webkit-transition:all .3s ease;transition:all .3s ease}
 .loop-grid a:hover{-webkit-transform:scale(1.05);transform:scale(1.05)}
 .loop-grid a img{width:100%;height:300px;-o-object-fit:cover;object-fit:cover;margin-bottom:1rem}
@@ -130,7 +130,7 @@ main{overflow:hidden;padding-top:65px}
 .single .beschreibung img{max-width:100%;height:auto}
 .smin-portfolio{background:#f3f3f3;padding-bottom:100px}
 .smin-portfolio .service-head{margin-bottom:.5rem;display:block}
-.smin-portfolio .link{background:#000;color:#fff;width:100%;padding:.5rem 1rem;display:inline-block;border-radius:5px;text-decoration:none;margin-bottom:2rem;-webkit-transition:all .3s ease;transition:all .3s ease}
+.smin-portfolio .link{background:var(--dark-color);color:#fff;width:100%;padding:.5rem 1rem;display:inline-block;border-radius:5px;text-decoration:none;margin-bottom:2rem;-webkit-transition:all .3s ease;transition:all .3s ease}
 .smin-portfolio .link:hover{-webkit-transition:all .3s ease;transition:all .3s ease}
 .smin-portfolio .link:hover{-webkit-transform:scale(1.1);transform:scale(1.1)}
 .smin-portfolio ul{margin:0;padding:0}
@@ -156,7 +156,7 @@ main{overflow:hidden;padding-top:65px}
 .header .hamburger{display:block}
 .header .logo img{height:16px}
 .header .toolbar .header-buttons{display:none}
-.header .toolbar .menu-hauptmenue-container{z-index:999;display:none;position:fixed;background:#000;top:0;left:0;right:0;bottom:0;font-size:20px;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.header .toolbar .menu-hauptmenue-container{z-index:999;display:none;position:fixed;background:var(--dark-color);top:0;left:0;right:0;bottom:0;font-size:20px;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .header .toolbar .menu-hauptmenue-container ul{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 .nav-visible .header .toolbar .menu-hauptmenue-container{display:-webkit-box;display:-ms-flexbox;display:flex}
 .footer{grid-template-columns:1fr}

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
 
-$black: #000000;
+$black: var(--dark-color);
 $white: #ffffff;
 $orange: var(--main-color);
 $grey: #333333;

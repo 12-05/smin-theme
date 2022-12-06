@@ -5,7 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             :root {
-            --main-color: <?php echo get_field('farbe', 'option');?>
+            --main-color: <?php echo get_field('farbe', 'option');?>;
+            --dark-color: <?php echo get_field('farbe_dunkel', 'option');?>;
+
             }
         </style>
     </head>
