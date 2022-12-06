@@ -9,7 +9,7 @@
             <div class="grid">
                 <?php $immobilien = get_field('immobilien');
                     if($immobilien):foreach($immobilien as $immobilie):?>
-                    <a class="immobilie" style="background-image:url(<?php echo wp_get_attachment_image_src(get_field('thumbnail', $immobilie->ID), 'medium');?>)" href="<?php echo get_permalink($immobilie->ID);?>">
+                    <a class="immobilie" style="background-image:url(<?php echo wp_get_attachment_image_src(get_field('thumbnail', $immobilie->ID)->ID, 'medium');?>)" href="<?php echo get_permalink($immobilie->ID);?>">
                         
                     </a>
                     <?php endforeach;endif;?>
@@ -20,7 +20,7 @@
            <div class="grid">
                 <?php $unternehmen = get_field('unternehmen');
                     if($unternehmen):foreach($unternehmen as $company):?>
-                    <a class="unternehmen" style="background-image:url(<?php echo wp_get_attachment_image_src(get_field('logo', $company->ID), 'medium');?>)" href="<?php echo get_permalink($company->ID);?>">
+                    <a class="unternehmen" style="background-image:url(<?php echo wp_get_attachment_image_src(get_field('logo', $company->ID)->ID, 'medium');?>)" href="<?php echo get_permalink($company->ID);?>">
                         
                     </a>
                     <?php endforeach;endif;?>
