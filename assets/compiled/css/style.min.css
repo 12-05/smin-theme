@@ -94,7 +94,7 @@ main{overflow:hidden;padding-top:65px}
 .block-portfolio .portfolio{text-align:left;display:grid;grid-gap:8rem;grid-template-columns:1fr 1fr}
 .block-portfolio .portfolio h3{margin-bottom:2rem;font-size:24px}
 .block-portfolio .grid{display:grid;grid-template-columns:1fr 1fr 1fr;grid-gap:2rem;width:100%}
-.block-portfolio .grid a{display:block;padding-bottom:100%;background-size:cover;background-position:center;background-repeat:no-repeat;-webkit-transition:all .3s ease;transition:all .3s ease}
+.block-portfolio .grid a{display:block;background:#eee;padding-bottom:100%;background-size:cover;background-position:center;background-repeat:no-repeat;-webkit-transition:all .3s ease;transition:all .3s ease}
 .block-portfolio .grid a:hover{-webkit-transition:all .3s ease;transition:all .3s ease}
 .block-portfolio .grid a:hover{-webkit-transform:scale(1.05);transform:scale(1.05)}
 .block-portfolio .grid a.unternehmen{border:1px solid #ccc;background-size:80%}
