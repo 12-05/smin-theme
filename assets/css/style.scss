@@ -388,6 +388,7 @@ main {
 				height: calc(100vh - 65px);
 				width: 100vw;
 				.one {
+					transform-origin: right top;
 					content: "";
 					position: absolute;
 					height: 70%;
@@ -401,6 +402,8 @@ main {
 					z-index: 10;
 				}
 				.two {
+					transform-origin: left bottom;
+
 					content: "";
 					position: absolute;
 					height: 70%;
