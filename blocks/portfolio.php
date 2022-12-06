@@ -12,7 +12,9 @@
                     <?php $thumbnailURL = wp_get_attachment_image_src(get_field('thumbnail', $immobilie->ID), 'medium')[0];?>
                     <?php if(!$thumbnailURL) continue;?>
                     <a class="immobilie" style="background-image:url(<?php echo $thumbnailURL;?>)" href="<?php echo get_permalink($immobilie->ID);?>">
-                        
+                    <div class="inner">
+                            <?php echo get_the_title($company->ID);?>
+                        </div>
                     </a>
                     <?php endforeach;endif;?>
             </div>
@@ -23,7 +25,9 @@
                 <?php $unternehmen = get_field('unternehmen');
                     if($unternehmen):foreach($unternehmen as $company):?>
                     <a class="unternehmen" style="background-image:url(<?php echo wp_get_attachment_image_src(get_field('logo', $company->ID), 'full')[0];?>)" href="<?php echo get_permalink($company->ID);?>">
-                        
+                        <div class="inner">
+                            <?php echo get_the_title($company->ID);?>
+                        </div>
                     </a>
                     <?php endforeach;endif;?>
             </div>

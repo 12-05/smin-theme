@@ -680,9 +680,25 @@ main {
 			background-size: cover;
 			background-position: center;
 			background-repeat: no-repeat;
+			position: relative;
 			@include fade;
+			.inner {
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				background: $orange;
+				color: $white;
+				box-sizing: border-box;
+				opacity: 0;
+				transition: all 0.3s ease;
+			}
 			&:hover {
 				transform: scale(1.05);
+				.inner {
+					transition: all 0.3s ease;
+
+					opacity: 1;
+				}
 			}
 			&.unternehmen {
 				border: 1px solid #ccc;
