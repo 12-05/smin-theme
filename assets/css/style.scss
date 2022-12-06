@@ -831,6 +831,12 @@ main {
 		object-fit: cover;
 		margin-bottom: 2rem;
 	}
+	.beschreibung {
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
 }
 
 .smin-portfolio {

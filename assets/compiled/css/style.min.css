@@ -127,6 +127,7 @@ main{overflow:hidden;padding-top:65px}
 .single .date{color:#ccc}
 .single .wrapped{padding:75px 0}
 .single .thumbnail{max-height:400px;width:100%;-o-object-fit:cover;object-fit:cover;margin-bottom:2rem}
+.single .beschreibung img{max-width:100%;height:auto}
 .smin-portfolio{background:#f3f3f3;padding-bottom:100px}
 .smin-portfolio .service-head{margin-bottom:.5rem;display:block}
 .smin-portfolio .link{background:#000;color:#fff;width:100%;padding:.5rem 1rem;display:inline-block;border-radius:5px;text-decoration:none;margin-bottom:2rem;-webkit-transition:all .3s ease;transition:all .3s ease}
