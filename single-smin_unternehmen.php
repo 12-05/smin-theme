@@ -3,7 +3,7 @@
     <img class="titelbild" src="<?php the_field('titelbild');?>" alt="Bild" />
     <div class="content">
         <div class="profile">
-            <img src="<?php the_field('logo');?>" alt="thumbnail" class="thumbnail">
+        <img src="<?php wp_get_attachment_image_src(get_field('logo'), 'medium')[0];?>" alt="thumbnail" class="thumbnail">
         </div>
          <div class="toolbar">
                 <?php 
