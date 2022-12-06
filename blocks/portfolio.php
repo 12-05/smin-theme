@@ -9,7 +9,9 @@
             <div class="grid">
                 <?php $immobilien = get_field('immobilien');
                     if($immobilien):foreach($immobilien as $immobilie):?>
-                    <a class="immobilie" style="background-image:url(<?php echo wp_get_attachment_image_src(get_field('thumbnail', $immobilie->ID), 'medium')[0];?>)" href="<?php echo get_permalink($immobilie->ID);?>">
+                    <?php $thumbnailURL = wp_get_attachment_image_src(get_field('thumbnail', $immobilie->ID), 'medium')[0];?>
+                    <?php if(!$thumbnailURL) continue;?>
+                    <a class="immobilie" style="background-image:url(<?php echo $thumbnailURL;?>)" href="<?php echo get_permalink($immobilie->ID);?>">
                         
                     </a>
                     <?php endforeach;endif;?>
