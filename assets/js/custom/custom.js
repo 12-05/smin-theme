@@ -68,7 +68,7 @@
 		let two = jQuery(".orange-bg .two");
 		var width = document.body.clientWidth;
 
-		let left = window.pageYOffset;
+		let left = window.pageYOffset * 1.5;
 		let top = e.offsetY;
 
 		one.css("transform", "scaleX(" + (width - left) / width + ")");
