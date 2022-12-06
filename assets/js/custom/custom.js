@@ -62,7 +62,7 @@
 		distance: "100%",
 		reset: true,
 	});
-	document.addEventListener("mousemove", function (e) {
+	document.addEventListener("scroll", function (e) {
 		let body = document.querySelector("body");
 		let one = jQuery(".orange-bg .one");
 		let two = jQuery(".orange-bg .two");
