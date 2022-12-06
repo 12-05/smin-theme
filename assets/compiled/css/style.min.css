@@ -76,7 +76,7 @@ main{overflow:hidden;padding-top:65px}
 .slick-active .content{-webkit-animation:slideUp 2s;animation:slideUp 2s}
 .block-team{background:var(--dark-color);color:#fff;padding:100px 0}
 .block-team .inner{margin:0 auto;max-width:1000px}
-.block-team .inner h2{font-size:66px;margin:0;line-height:1;padding-bottom:1rem;font-weight:bold;color:var(--dark-color);margin-bottom:3rem;padding-bottom:3rem;position:relative}
+.block-team .inner h2{font-size:66px;margin:0;line-height:1;padding-bottom:1rem;font-weight:bold;color:var(--dark-color);color:#fff;margin-bottom:3rem;padding-bottom:3rem;position:relative}
 .block-team .inner h2 .orange{color:var(--main-color)}
 .block-team .inner h2:after{position:absolute;bottom:0;display:block;width:75px;height:10px;content:"";background:#fff}
 .block-team .inner .team-grid{margin-left:8rem;display:grid;grid-gap:8rem;grid-template-columns:1fr 1fr}
