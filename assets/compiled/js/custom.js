@@ -21,12 +21,12 @@
     reset: true
   });
   ScrollReveal().reveal(".grid .immobilie", {
-    interval: 200,
-    reset: true
+    interval: 50,
+    reset: false
   });
   ScrollReveal().reveal(".grid .unternehmen", {
-    interval: 200,
-    reset: true
+    interval: 50,
+    reset: false
   });
   ScrollReveal().reveal(".smin-person img", {
     origin: "left",

@@ -25,8 +25,8 @@ define('SMINURL', get_template_directory_uri());
             wp_dequeue_style( 'wp-block-library' );
             wp_dequeue_style( 'wp-block-library-theme' );
             wp_enqueue_style( 'smin-style', SMINURL.'/assets/compiled/css/style.css' );
-            wp_enqueue_script( 'smin-script', SMINURL.'/assets/compiled/js/custom.js', array('jquery'), '1.0.0', true );
-            wp_enqueue_script( 'slick-script', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"', array('jquery'), '1.0.0', false );
+            wp_enqueue_script( 'smin-script', SMINURL.'/assets/compiled/js/custom.js', array('jquery'), time(), true );
+            wp_enqueue_script( 'slick-script', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"', array('jquery'), "1.0", false );
             wp_enqueue_style( 'slick-style', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css' );
             wp_enqueue_script( 'scrollreveal','https://unpkg.com/scrollreveal', array('jquery'), '1.0.0', false );
 
