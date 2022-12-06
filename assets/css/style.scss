@@ -22,7 +22,7 @@ $mobile: 675px;
 	line-height: 1;
 	padding-bottom: 1rem;
 	font-weight: bold;
-
+	color: $black;
 	.orange {
 		color: $orange;
 	}
@@ -649,6 +649,7 @@ main {
 			grid-template-columns: 1fr;
 		}
 		h3 {
+			color: $black;
 			margin-bottom: 2rem;
 			font-size: 24px;
 		}
