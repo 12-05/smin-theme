@@ -64,8 +64,8 @@
 	});
 	document.addEventListener("mousemove", function (e) {
 		let body = document.querySelector("body");
-		let one = jQuery("#.orange-bg .one");
-		let two = jQuery("#.orange-bg .two");
+		let one = jQuery(".orange-bg .one");
+		let two = jQuery(".orange-bg .two");
 		var width = document.body.clientWidth;
 
 		let left = e.offsetX;
