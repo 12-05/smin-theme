@@ -60,4 +60,12 @@
     distance: "100%",
     reset: true
   });
+  document.addEventListener("mousemove", function (e) {
+    var body = document.querySelector("body");
+    var circle = document.getElementById("divtest");
+    var left = e.offsetX;
+    var top = e.offsetY;
+    circle.style.left = left + "px";
+    circle.style.top = top + "px";
+  });
 })(jQuery);
