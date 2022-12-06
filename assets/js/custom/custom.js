@@ -71,6 +71,7 @@
 		let left = e.offsetX;
 		let top = e.offsetY;
 		console.log(left / 100);
+		console.log(one.width());
 		two.css("width", two.width() - left / 100 + "px");
 		one.css("width", one.width() - (width - left) / 100 + "px");
 	});
