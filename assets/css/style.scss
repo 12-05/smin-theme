@@ -418,7 +418,7 @@ main {
 				padding: 2rem;
 				.headline {
 					@include bighead;
-
+					color: $white;
 					.orange {
 						color: $orange;
 					}

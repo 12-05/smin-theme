@@ -60,7 +60,7 @@ main{overflow:hidden;padding-top:65px}
 .block-slider .slide .inner .orange-bg:before{content:"";position:absolute;height:70%;width:70%;top:0;right:0;opacity:.5;background:var(--main-color);z-index:10;mix-blend-mode:overlay;z-index:10}
 .block-slider .slide .inner .orange-bg:after{content:"";position:absolute;height:70%;width:70%;left:0;bottom:0;opacity:.5;background:var(--main-color);z-index:10;mix-blend-mode:overlay;z-index:10}
 .block-slider .slide .inner .content{position:relative;z-index:10;text-align:center;color:#fff;padding:2rem}
-.block-slider .slide .inner .content .headline{font-size:66px;margin:0;line-height:1;padding-bottom:1rem;font-weight:bold;color:var(--dark-color)}
+.block-slider .slide .inner .content .headline{font-size:66px;margin:0;line-height:1;padding-bottom:1rem;font-weight:bold;color:var(--dark-color);color:#fff}
 .block-slider .slide .inner .content .headline .orange{color:var(--main-color)}
 .block-slider .slide .inner .content .headline .orange{color:var(--main-color)}
 .block-slider .slide .inner .content .subline{font-size:24px;font-weight:bold}
