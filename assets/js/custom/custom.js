@@ -71,7 +71,7 @@
 		let left = window.pageYOffset;
 		let top = e.offsetY;
 
-		one.css("transform", "scaleX(" + left / width + ")");
-		two.css("transform", "scaleX(" + left / width + ")");
+		one.css("transform", "scaleX(" + (width - left) / width + ")");
+		two.css("transform", "scaleX(" + (width - left) / width + ")");
 	});
 })(jQuery);
