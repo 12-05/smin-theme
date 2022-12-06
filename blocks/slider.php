@@ -4,7 +4,10 @@
     <div class="slide" >
         <div class="inner" >
             <div class="bg" style="background-image:url(<?php echo $slide['bild'];?>)"></div>
-            <div class="orange-bg" id="divtest"></div>
+            <div class="orange-bg" id="divtest">
+                <div class="one"></div>
+                <div class="two"></div>
+            </div>
             <div class="content">    
                 <div class="headline"><?php echo $slide['headline'];?></div>
                 <div class="subline"><?php echo $slide['subline'];?></div>
