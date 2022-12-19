@@ -380,8 +380,6 @@ main {
 				width: 100%;
 				background-size: cover;
 				background-position: center;
-				-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-				filter: grayscale(100%);
 			}
 			.orange-bg {
 				position: absolute;
@@ -395,10 +393,9 @@ main {
 					width: 70%;
 					top: 0;
 					right: 0;
-					opacity: 0.5;
-					background: $orange;
-					z-index: 10;
-					mix-blend-mode: overlay;
+					opacity: 0.1;
+					background: $white;
+					mix-blend-mode: lighten;
 					z-index: 10;
 				}
 				.two {
@@ -410,18 +407,18 @@ main {
 					width: 70%;
 					left: 0;
 					bottom: 0;
-					opacity: 0.5;
-					background: $orange;
-					z-index: 10;
-					mix-blend-mode: overlay;
+					opacity: 0.1;
+					background: $white;
+					mix-blend-mode: lighten;
 					z-index: 10;
 				}
 			}
 
 			.content {
-				position: relative;
+				position: absolute;
+				bottom: 4rem;
+				left: 4rem;
 				z-index: 10;
-				text-align: center;
 				color: #fff;
 				padding: 2rem;
 				.headline {

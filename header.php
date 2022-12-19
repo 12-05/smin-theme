@@ -23,7 +23,7 @@
                     ));?>
                     <nav class="header-buttons">
                         <?php $buttons = get_field('header_buttons', 'option');?>
-                        <?php array_map(function($item) {
+                        <?php $buttons && array_map(function($item) {
                             echo '<a href="'.$item['link'].'"><img src="'.$item['bild'].'"/></a>';
                         },$buttons);?>
                     </nav>
