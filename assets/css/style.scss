@@ -252,6 +252,13 @@ p {
 			bottom: 0;
 		}
 	}
+	.sponsoring {
+		display: flex;
+		img {
+			height: 50px;
+			width: auto;
+		}
+	}
 	#footer_menu {
 		margin: 0;
 		padding: 0;

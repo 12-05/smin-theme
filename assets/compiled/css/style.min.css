@@ -31,6 +31,8 @@ p{font-size:20px;line-height:1.5}
 .footer{background:var(--dark-color);padding:150px 10vw;display:grid;grid-template-columns:1fr 2fr 1fr;color:#fff;font-size:20px;grid-gap:3rem}
 .footer>div>h3{color:#fff;margin-bottom:2rem;font-size:20px;position:relative;padding-bottom:1rem}
 .footer>div>h3:after{display:block;left:0;width:75px;height:5px;content:"";background:#fff;position:absolute;bottom:0}
+.footer .sponsoring{display:-webkit-box;display:-ms-flexbox;display:flex}
+.footer .sponsoring img{height:50px;width:auto}
 .footer #footer_menu{margin:0;padding:0;text-decoration:none}
 .footer #footer_menu li{list-style:none;margin-bottom:1rem}
 .footer #footer_menu li a{color:#fff;text-decoration:none}
