@@ -27,7 +27,7 @@ p{font-size:20px;line-height:1.5}
 .header .toolbar .header-buttons a:hover img:hover{-webkit-transition:all .3s ease;transition:all .3s ease}
 .header .toolbar #primary_menu{margin:0;padding:0;display:-webkit-box;display:-ms-flexbox;display:flex}
 .header .toolbar #primary_menu li{list-style:none}
-.header .toolbar #primary_menu li a{position:relative;height:65px;padding:1rem 2rem;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;color:#fff;text-decoration:none;font-weight:bold;-webkit-transition:all .3s ease;transition:all .3s ease}
+.header .toolbar #primary_menu li a{position:relative;height:65px;padding:1rem 2rem;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;color:var(--main-color);text-decoration:none;font-weight:bold;-webkit-transition:all .3s ease;transition:all .3s ease}
 .header .toolbar #primary_menu li a:hover{-webkit-transition:all .3s ease;transition:all .3s ease}
 .header .toolbar #primary_menu li a:hover{background:rgba(255,255,255,0.2)}
 .header .toolbar #primary_menu li.current-menu-item a:after{content:"";height:5px;width:20px;background:#fff;border-radius:3px;position:absolute;bottom:10px}
