@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;
-
-700&display=swap");*{-webkit-box-sizing:border-box;box-sizing:border-box}
+@import url("https://fonts.bunny.net/css?family=ubuntu:300i,400");*{-webkit-box-sizing:border-box;box-sizing:border-box}
 body{font-family:"Ubuntu",sans-serif;font-size:20px;margin:0;padding:0;background:#fff;color:#333}
 .wrapped{margin:0 auto;max-width:1000px;padding:150px 0}
 .wrapped h1{font-size:66px;margin:0;line-height:1;padding-bottom:1rem;font-weight:bold;color:var(--dark-color);position:relative;padding-bottom:2rem;margin-bottom:2rem}
