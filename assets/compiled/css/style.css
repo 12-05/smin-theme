@@ -143,9 +143,9 @@ main { overflow: hidden; padding-top: 65px; }
 
 .block-slider .slide .inner .orange-bg { position: absolute; height: calc(100vh - 65px); width: 100vw; }
 
-.block-slider .slide .inner .orange-bg .one { -webkit-transform-origin: right top; transform-origin: right top; content: ""; position: absolute; height: 70%; width: 70%; top: 0; right: 0; opacity: 0.1; background: #ffffff; mix-blend-mode: lighten; z-index: 10; }
+.block-slider .slide .inner .orange-bg .one { -webkit-transform-origin: right top; transform-origin: right top; content: ""; position: absolute; height: 70%; width: 70%; top: 0; right: 0; opacity: 0.2; background: #ffffff; mix-blend-mode: lighten; z-index: 10; }
 
-.block-slider .slide .inner .orange-bg .two { -webkit-transform-origin: left bottom; transform-origin: left bottom; content: ""; position: absolute; height: 70%; width: 70%; left: 0; bottom: 0; opacity: 0.1; background: #ffffff; mix-blend-mode: lighten; z-index: 10; }
+.block-slider .slide .inner .orange-bg .two { -webkit-transform-origin: left bottom; transform-origin: left bottom; content: ""; position: absolute; height: 70%; width: 70%; left: 0; bottom: 0; opacity: 0.2; background: #ffffff; mix-blend-mode: lighten; z-index: 10; }
 
 .block-slider .slide .inner .content { position: absolute; bottom: 4rem; left: 4rem; z-index: 10; color: #fff; padding: 2rem; }
 
