@@ -157,9 +157,8 @@ p {
 				@include fade;
 				&:hover {
 					background: rgba(255, 255, 255, 0.2);
-					img {
-						@include fade;
-						transform: scale(1.2);
+					path {
+						fill: $orange !important;
 					}
 				}
 			}
