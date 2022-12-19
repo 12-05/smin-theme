@@ -24,7 +24,8 @@
                     <nav class="header-buttons">
                         <?php $buttons = get_field('header_buttons', 'option');?>
                         <?php $buttons && array_map(function($item) {
-                            echo '<a href="'.$item['link'].'"><img src="'.$item['bild'].'"/></a>';
+                            $image = get_attached_file($item['bild']);
+                            echo '<a href="'.$item['link'].'">'.file_get_contents($image).'</a>';
                         },$buttons);?>
                     </nav>
                 </div>
