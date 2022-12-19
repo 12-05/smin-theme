@@ -254,6 +254,12 @@ p {
 	}
 	.sponsoring {
 		display: flex;
+		p {
+			margin: 0;
+		}
+		h3 {
+			margin-bottom: 0px;
+		}
 		img {
 			height: 50px;
 			width: auto;
