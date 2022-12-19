@@ -254,6 +254,7 @@ p {
 	}
 	.sponsoring {
 		display: flex;
+		flex-wrap: wrap;
 		p {
 			margin: 0;
 		}
