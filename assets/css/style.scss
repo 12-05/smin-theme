@@ -892,7 +892,8 @@ main {
 		li {
 			margin-right: 0.5rem;
 			display: inline-block;
-			background: rgba(0, 0, 0, 0.1);
+			background: $orange;
+			color: $white;
 			padding: 0.5rem 1rem;
 			border-radius: 5px;
 			margin-bottom: 0.5rem;
