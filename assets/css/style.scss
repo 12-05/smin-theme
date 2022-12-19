@@ -664,6 +664,7 @@ main {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 		grid-gap: 2rem;
+		margin-bottom: 2rem;
 		width: 100%;
 		@media (max-width: $mobile) {
 			grid-template-columns: 1fr 1fr;
