@@ -4,6 +4,19 @@
         <?php the_field('text');?>
     </div>
     <div class="portfolio">
+    <div class="topic">
+            <h3>Unternehmensbeteiligungen</h3>
+           <div class="grid">
+                <?php $unternehmen = get_field('unternehmen');
+                    if($unternehmen):foreach($unternehmen as $company):?>
+                    <a class="unternehmen" style="background-image:url(<?php echo wp_get_attachment_image_src(get_field('logo', $company->ID), 'full')[0];?>)" href="<?php echo get_permalink($company->ID);?>">
+                        <div class="inner">
+                            <?php echo get_the_title($company->ID);?>
+                        </div>
+                    </a>
+                    <?php endforeach;endif;?>
+            </div>
+        </div>
         <div class="topic">
             <h3>Immobilien</h3>
             <div class="grid">
@@ -19,18 +32,6 @@
                     <?php endforeach;endif;?>
             </div>
         </div>
-         <div class="topic">
-            <h3>Unternehmensbeteiligungen</h3>
-           <div class="grid">
-                <?php $unternehmen = get_field('unternehmen');
-                    if($unternehmen):foreach($unternehmen as $company):?>
-                    <a class="unternehmen" style="background-image:url(<?php echo wp_get_attachment_image_src(get_field('logo', $company->ID), 'full')[0];?>)" href="<?php echo get_permalink($company->ID);?>">
-                        <div class="inner">
-                            <?php echo get_the_title($company->ID);?>
-                        </div>
-                    </a>
-                    <?php endforeach;endif;?>
-            </div>
-        </div>
+    
     </div>
 </section>
