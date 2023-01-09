@@ -105,6 +105,7 @@ main{overflow:hidden;padding-top:65px}
 .wp-block{max-width:100% !important}
 .block-bild{overflow:hidden;position:relative;display:-webkit-box;display:-ms-flexbox;display:flex}
 .block-bild.bild-wrapped{max-width:1000px;margin:auto}
+.block-bild:not(.bild-wrapped){border-bottom:5px solid var(--main-color)}
 .block-bild img{-o-object-fit:cover;object-fit:cover;-o-object-position:center;object-position:center;width:100%;height:100%;position:absolute}
 .block-block{display:grid;grid-template-columns:1fr 1fr;min-height:50vh}
 .block-block .content{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;padding:100px 10vw}
