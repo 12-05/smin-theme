@@ -261,6 +261,12 @@ p {
 		flex-wrap: wrap;
 		justify-content: flex-start;
 		p {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			img {
+				max-width: 100%;
+				height: auto;
+			}
 			margin: 0;
 		}
 		h3 {
