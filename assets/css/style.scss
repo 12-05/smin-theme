@@ -189,8 +189,9 @@ p {
 				}
 				&.current-menu-item a:after {
 					content: "";
+					right: 2rem;
+					left: 2rem;
 					height: 5px;
-					width: 100%;
 					background: $white;
 					border-radius: 3px;
 					position: absolute;
