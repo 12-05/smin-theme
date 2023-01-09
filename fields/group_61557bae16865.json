@@ -51,6 +51,25 @@
             "mime_types": ""
         },
         {
+            "key": "field_63bc1d502133e",
+            "label": "Kurztext",
+            "name": "kurztext",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_61557be70a34d",
             "label": "Beschreibung",
             "name": "beschreibung",
@@ -145,5 +164,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1670321900
+    "modified": 1673272664
 }

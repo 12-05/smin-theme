@@ -701,13 +701,33 @@ main {
 		}
 		a {
 			display: block;
-			background: #eee;
 			padding-bottom: 100%;
-			background-size: cover;
-			background-position: center;
-			background-repeat: no-repeat;
 			position: relative;
 			@include fade;
+			&.unternehmen {
+				.front {
+					background-size: 80%;
+				}
+			}
+			&:hover {
+				.front {
+					transform: rotateY(180deg);
+				}
+			}
+			.front {
+				border: 1px solid #ccc;
+				background: #eee;
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				transition: transform 1s;
+				transform-style: preserve-3d;
+				backface-visibility: hidden;
+				transform: rotateY(0);
+			}
 			.inner {
 				height: 100%;
 				width: 100%;
@@ -715,23 +735,22 @@ main {
 				background: $orange;
 				color: $white;
 				box-sizing: border-box;
-				opacity: 0;
 				transition: all 0.3s ease;
 				padding: 1rem;
 				font-weight: bold;
 				font-size: 0.75rem;
+
+				transition: transform 1s;
+				transform-style: preserve-3d;
+				backface-visibility: hidden;
+				transform: rotateY(180deg);
 			}
 			&:hover {
-				transform: scale(1.05);
 				.inner {
-					transition: all 0.3s ease;
+					transform: rotateY(0);
 
 					opacity: 0.9;
 				}
-			}
-			&.unternehmen {
-				border: 1px solid #ccc;
-				background-size: 80%;
 			}
 		}
 	}
