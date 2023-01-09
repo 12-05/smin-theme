@@ -727,6 +727,7 @@ main {
 				transform-style: preserve-3d;
 				backface-visibility: hidden;
 				transform: rotateY(0);
+				box-shadow: 0 10px 30px rgba(0, 0, 0, 0.16);
 			}
 			.inner {
 				height: 100%;
@@ -744,10 +745,11 @@ main {
 				transform-style: preserve-3d;
 				backface-visibility: hidden;
 				transform: rotateY(180deg);
+				box-shadow: 0 10px 30px rgba(0, 0, 0, 0.16);
 			}
 			&:hover {
 				.inner {
-					transform: rotateY(0);
+					transform: rotateY(0) scale(1.05);
 
 					opacity: 0.9;
 				}
