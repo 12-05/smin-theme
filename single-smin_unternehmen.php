@@ -4,8 +4,7 @@
     <div class="content">
         <div class="profile">
         <img src="<?php echo wp_get_attachment_image_src(get_field('logo'), 'medium')[0];?>" alt="thumbnail" class="thumbnail">
-        </div>
-         <div class="toolbar">
+        <div class="toolbar" style='margin-top:32px;'>
                 <?php 
                 $link = get_field('homepage');
                 if($link) { ?>
@@ -20,6 +19,8 @@
                     endforeach;endif;?>
                 </ul>
         </div>
+        </div>
+        
         <div class="text">
             <h1><?php the_title();?></h1>
             <div class="beschreibung">

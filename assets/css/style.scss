@@ -961,11 +961,9 @@ main {
 	}
 	.profile {
 		background-color: #fff;
-		position: absolute;
 		border: 2px solid $orange;
 		height: 225px;
 		width: 225px;
-		margin-top: -250px;
 		overflow: hidden;
 		@media (max-width: $mobile) {
 			height: 75px;
