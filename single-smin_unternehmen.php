@@ -2,8 +2,10 @@
 <section class="smin-portfolio smin-unternehmen">
     <img class="titelbild" src="<?php the_field('titelbild');?>" alt="Bild" />
     <div class="content">
+        <div>
         <div class="profile">
         <img src="<?php echo wp_get_attachment_image_src(get_field('logo'), 'medium')[0];?>" alt="thumbnail" class="thumbnail">
+        </div>
         <div class="toolbar" style='margin-top:32px;'>
                 <?php 
                 $link = get_field('homepage');
@@ -19,8 +21,7 @@
                     endforeach;endif;?>
                 </ul>
         </div>
-        </div>
-        
+      </div>
         <div class="text">
             <h1><?php the_title();?></h1>
             <div class="beschreibung">
