@@ -63,7 +63,7 @@ main{overflow:hidden;padding-top:65px}
 .block-slider .slide .inner .orange-bg .one{-webkit-transform-origin:right top;transform-origin:right top;content:"";position:absolute;height:70%;width:70%;top:0;right:0;opacity:.2;background:#fff;mix-blend-mode:lighten;z-index:10}
 .block-slider .slide .inner .orange-bg .two{-webkit-transform-origin:left bottom;transform-origin:left bottom;content:"";position:absolute;height:70%;width:70%;left:0;bottom:0;opacity:.2;background:#fff;mix-blend-mode:lighten;z-index:10}
 .block-slider .slide .inner .content{text-align:center;z-index:10;color:var(--dark-color);padding:2rem}
-.block-slider .slide .inner .content .headline{font-size:66px;margin:0;line-height:1;padding-bottom:1rem;font-weight:bold;color:var(--dark-color)}
+.block-slider .slide .inner .content .headline{font-size:66px;margin:0;line-height:1;padding-bottom:1rem;font-weight:bold;color:#fff;}
 .block-slider .slide .inner .content .headline .orange{color:var(--main-color)}
 .block-slider .slide .inner .content .headline .orange{color:var(--main-color)}
 .block-slider .slide .inner .content .subline{font-size:24px;font-weight:bold}

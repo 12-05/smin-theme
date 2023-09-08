@@ -12,7 +12,7 @@
                 if($link) { ?>
                     <a class="link" target="<?php echo $link['target'];?>" href="<?php echo $link['url'];?>"><?php echo $link['title'];?></a>
                 <?php } ?>
-                <strong class="service-head">Leistungen</strong>
+                <strong class="service-head" style='margin-top:24px'>Leistungen</strong>
                 <ul>
                 <?php 
                     $leistungen = get_field('leistungen');

@@ -157,7 +157,7 @@ main { overflow: hidden; padding-top: 65px; }
 
 .block-slider .slide .inner .content { text-align: center; z-index: 10; color: var(--dark-color); padding: 2rem; }
 
-.block-slider .slide .inner .content .headline { font-size: 66px; margin: 0; line-height: 1; padding-bottom: 1rem; font-weight: bold; color: var(--dark-color); }
+.block-slider .slide .inner .content .headline { font-size: 66px; margin: 0; line-height: 1; padding-bottom: 1rem; font-weight: bold; color:#fff}
 
 .block-slider .slide .inner .content .headline .orange { color: var(--main-color); }
 
