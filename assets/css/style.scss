@@ -443,11 +443,10 @@ main {
 			.content {
 				text-align: center;
 				z-index: 10;
-				color: #fff;
+				color: var(--dark-color);
 				padding: 2rem;
 				.headline {
 					@include bighead;
-					color: $white;
 					.orange {
 						color: $orange;
 					}
