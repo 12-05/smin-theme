@@ -2,6 +2,7 @@
 <section class="smin-portfolio smin-immobilie">
     <img class="titelbild" src="<?php the_field('titelbild');?>" alt="Bild" />
     <div class="content">
+        <div>
         <div class="profile">
             <img src="<?php  echo wp_get_attachment_image_src(get_field('thumbnail'), 'medium')[0];?>" alt="thumbnail" class="thumbnail">
         </div>
@@ -19,6 +20,7 @@
                     echo '<li>'.$leistung['text'].'</li>';
                     endforeach;endif;?>
                 </ul>
+        </div>
         </div>
         <div class="text">
             <h1><?php the_title();?></h1>
