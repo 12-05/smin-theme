@@ -124,7 +124,7 @@ main{overflow:hidden;padding-top:65px}
 .block-block .img{position:relative}
 .block-block .img img{position:absolute;width:100%;height:100%;-o-object-fit:cover;object-fit:cover;-o-object-position:center;object-position:center}
 .block-block.image_right .content{grid-column:1;grid-row:1}
-.loop-grid{display:grid;grid-template-columns:1fr 1fr;grid-gap:2rem}
+.loop-grid{display:grid;grid-template-columns:1fr 1fr 1fr;grid-gap:1rem}
 .loop-grid a{-webkit-transition:all .3s ease;transition:all .3s ease;text-decoration:none;color:var(--dark-color)}
 .loop-grid a:hover{-webkit-transition:all .3s ease;transition:all .3s ease}
 .loop-grid a:hover{-webkit-transform:scale(1.05);transform:scale(1.05)}

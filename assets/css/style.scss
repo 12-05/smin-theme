@@ -862,8 +862,8 @@ main {
 
 .loop-grid {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 2rem;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1rem;
 	@media (max-width: $mobile) {
 		grid-template-columns: 1fr;
 	}

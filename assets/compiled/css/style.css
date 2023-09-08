@@ -334,7 +334,7 @@ main { overflow: hidden; padding-top: 65px; }
   .block-block.image_right .content { grid-column: 1; grid-row: 2; }
   .block-block .img { height: 30vh; grid-column: 1; grid-row: 1; } }
 
-.loop-grid { display: grid; grid-template-columns: 1fr 1fr; grid-gap: 2rem; }
+.loop-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 1rem; }
 
 @media (max-width: 675px) { .loop-grid { grid-template-columns: 1fr; } }
 
