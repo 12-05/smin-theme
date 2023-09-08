@@ -27,7 +27,9 @@
                         'theme_location' => 'footer_menu',
                         'menu_id' => 'footer_menu'
              ));?>
-             <h3 style="margin-top:3rem;">Sponsoring</h3>
+        </div>
+        <div>
+        <h3>Sponsoring</h3>
              <div class="sponsoring">
                 <?php echo get_field('sponsoring', 'option');?>
             </div>

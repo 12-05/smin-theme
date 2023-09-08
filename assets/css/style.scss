@@ -228,18 +228,17 @@ p {
 
 .footer {
 	background: $black;
-	padding: 150px 10vw;
+	padding: 150px 5vw;
 	@media (max-width: $mobile) {
 		grid-template-columns: 1fr;
 	}
 	display: grid;
-	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-columns: 1fr 2fr 1fr 1fr;
 	color: $white;
-	font-size: 20px;
+	font-size: 16px;
 	grid-gap: 3rem;
 	> div > h3 {
 		color: $orange;
-
 		margin-bottom: 2rem;
 		font-size: 20px;
 		position: relative;
