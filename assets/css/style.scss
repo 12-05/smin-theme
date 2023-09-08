@@ -390,6 +390,8 @@ main {
 .block-slider {
 	height: calc(100vh - 65px);
 	overflow: hidden;
+	border-bottom: 5px solid var(--main-color);
+
 	.slide {
 		.inner {
 			height: calc(100vh - 65px);
@@ -956,6 +958,7 @@ main {
 		width: 100%;
 		object-fit: cover;
 		object-position: center;
+		border-bottom: 5px solid var(--main-color);
 	}
 	h1 {
 		margin-top: 0;
