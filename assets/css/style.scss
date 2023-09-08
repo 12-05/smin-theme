@@ -768,9 +768,6 @@ main {
 		max-width: $wrapperSize;
 		margin: auto;
 	}
-	&:not(.bild-wrapped) {
-		border-bottom: 5px solid $orange;
-	}
 	img {
 		object-fit: cover;
 		object-position: center;
