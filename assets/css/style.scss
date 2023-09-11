@@ -1069,3 +1069,13 @@ main {
 		}
 	}
 }
+
+.pagination {
+	span {
+		color: var(--main-color);
+	}
+	a {
+		color: var(--dark-color);
+		text-decoration: none;
+	}
+}

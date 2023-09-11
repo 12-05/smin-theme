@@ -364,7 +364,8 @@ main { overflow: hidden; padding-top: 65px; }
 .smin-portfolio { background: #f3f3f3; padding-bottom: 100px; }
 
 .smin-portfolio .service-head { margin-bottom: 0.5rem; display: block; }
-
+.pagination span{color:var(--main-color);}
+.pagination a{color:var(--dark-color);text-decoration: none;}
 .smin-portfolio .link { background: var(--dark-color); color: var(--main-color); width: 100%; padding: 0.5rem 1rem; display: inline-block; border-radius: 5px; text-decoration: none; margin-bottom: 2rem; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
 
 .smin-portfolio .link:hover { -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
