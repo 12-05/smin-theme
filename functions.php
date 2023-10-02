@@ -16,7 +16,7 @@ class SMIN_Theme
         add_action('after_setup_theme', array($this, 'misc_functions'));
         add_filter('use_block_editor_for_post_type', array($this, 'disable_gutenberg'), 10, 2);
         add_action('pre_get_posts', function ($query) {
-            if (!is_admin() && is_archive() && $query->is_main_query()) {
+            if (!is_admin() && $query->is_main_query()) {
                 $query->set('posts_per_page', 100);
             }
         });
