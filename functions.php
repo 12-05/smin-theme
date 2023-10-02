@@ -31,7 +31,7 @@ class SMIN_Theme
     {
         wp_dequeue_style('wp-block-library');
         wp_dequeue_style('wp-block-library-theme');
-        wp_enqueue_style('smin-style', SMINURL . '/assets/compiled/css/style.css');
+        wp_enqueue_style('smin-style', SMINURL . '/assets/compiled/css/style.css', array(), "2.0");
         wp_enqueue_script('smin-script', SMINURL . '/assets/compiled/js/custom.js', array('jquery'), time(), true);
         wp_enqueue_script('slick-script', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"', array('jquery'), "1.0", false);
         wp_enqueue_style('slick-style', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');
