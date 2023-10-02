@@ -129,7 +129,7 @@ main{overflow:hidden;padding-top:65px}
 .loop-grid a:hover{-webkit-transform:scale(1.05);transform:scale(1.05)}
 .loop-grid a img{width:100%;height:300px;-o-object-fit:cover;object-fit:cover;margin-bottom:1rem}
 .loop-grid a .date{color:#ccc}
-.loop-grid a h3{font-size:32px;margin:0;margin-bottom:1.5rem}
+.loop-grid a h3{font-size:27px;margin:0;margin-bottom:1.5rem}
 .loop-grid a .description{color:#666}
 .single .date{color:#ccc}
 .single .wrapped{padding:75px 0}
