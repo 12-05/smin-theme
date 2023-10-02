@@ -19,4 +19,27 @@
         <?php endforeach;endif;?>
         </div>
     </div>
+    <?php 
+        $members = get_field('members');
+        if($members):
+        ?>
+    <div class="sec-team-grid wrapped">
+        <?php foreach($members as $member):?>
+            <div class="member">
+                <figure><img src="<?php echo $member['image'];?>" alt="<?php echo $member['name'];?>" /></figure>
+                <div class="info">
+                    <div class="name"><?php echo $member['name'];?></div>
+                        <div class="sub">
+                        <div class="role"><?php echo $member['role'];?></div>
+                        <div class="company"><?php echo $member['company'];?></div>
+                </div>
+                </div>
+
+            </div>
+            <? endforeach;?>
+        </div>
+<?php endif;?>
+    </div>
+
+
 </section>

@@ -1079,3 +1079,42 @@ main {
 		text-decoration: none;
 	}
 }
+
+.sec-team-grid {
+	// auto grid
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-gap: 1rem;
+	.member {
+		&:hover {
+			img {
+				transform: scale(1.1);
+				transition: all 0.2s ease;
+			}
+		}
+	}
+	figure {
+		overflow: hidden;
+		width: 100%;
+		padding-bottom: 100%;
+		position: relative;
+		margin: 0;
+		margin-bottom: 1rem;
+		img {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			transition: all 0.2s ease;
+		}
+	}
+	.info {
+		.name {
+			font-weight: bold;
+		}
+		.sub {
+			opacity: 0.7;
+			font-size: 0.9rem;
+			margin-top: 0.25rem;
+		}
+	}
+}
