@@ -159,7 +159,7 @@ main{overflow:hidden;padding-top:65px}
 .smin-person ul strong{display:inline-block;margin-right:2rem}
 .pagination span{color:var(--main-color)}
 .pagination a{color:var(--dark-color);text-decoration:none}
-.sec-team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));grid-gap:1rem}
+.sec-team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));grid-gap:1rem;margin-top:4rem}
 .sec-team-grid .member:hover img{-webkit-transform:scale(1.1);transform:scale(1.1);-webkit-transition:all .2s ease;transition:all .2s ease}
 .sec-team-grid figure{overflow:hidden;width:100%;padding-bottom:100%;position:relative;margin:0;margin-bottom:1rem}
 .sec-team-grid figure img{position:absolute;height:100%;width:100%;-webkit-transition:all .2s ease;transition:all .2s ease}
