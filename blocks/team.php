@@ -39,7 +39,7 @@
             <? endforeach;?>
             <style>
                 .team-grid {
-                    margin-left:0;
+                    margin-left:0!important;
                 }
             </style>
         </div>
