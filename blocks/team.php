@@ -37,9 +37,10 @@
 
             </div>
             <? endforeach;?>
-            <div style="margin-top:2rem">Und viele mehr ...</div>
 
         </div>
+        <div style="margin-top:2rem">Und viele mehr ...</div>
+
 <?php endif;?>
     </div>
 
