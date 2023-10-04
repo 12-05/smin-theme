@@ -23,7 +23,7 @@
         $members = get_field('members');
         if($members):
         ?>
-    <div class="sec-team-grid wrapped">
+    <div class="sec-team    -grid wrapped">
         <?php foreach($members as $member):?>
             <div class="member">
                 <figure><img src="<?php echo $member['image'];?>" alt="<?php echo $member['name'];?>" /></figure>
@@ -39,6 +39,7 @@
             <? endforeach;?>
         </div>
 <?php endif;?>
+<div style="margin-top:2rem">Und viele mehr ...</div>
     </div>
 
 
