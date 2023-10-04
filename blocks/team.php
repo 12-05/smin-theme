@@ -39,7 +39,7 @@
             <? endforeach;?>
 
         </div>
-        <div  style="margin-top:2rem" class="wrapped">Und viele mehr ...</div>
+        <div style="padding-top:0" class="wrapped">Und viele mehr ...</div>
 
 <?php endif;?>
     </div>
