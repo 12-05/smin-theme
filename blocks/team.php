@@ -37,7 +37,11 @@
 
             </div>
             <? endforeach;?>
-
+            <style>
+                .team-grid {
+                    margin-left:0;
+                }
+            </style>
         </div>
         <div style="padding-top:0" class="wrapped">Und viele mehr ...</div>
 
