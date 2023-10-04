@@ -12,8 +12,7 @@ class SMIN_Blocks
         function set_custom_edit_book_columns($columns)
         {
             unset($columns['author']);
-            $columns['book_author'] = __('Author', 'your_text_domain');
-            $columns['publisher'] = __('Publisher', 'your_text_domain');
+            $columns['post_title'] = __('title', 'your_text_domain');
 
             return $columns;
         }
