@@ -7,7 +7,18 @@ class SMIN_Blocks
         add_action('acf/init', array($this, 'register_blocks'));
         add_action('enqueue_block_editor_assets', array($this, 'load_assets'));
         add_filter('acf/fields/relationship/result', array($this, 'render_immo_title'), 10, 4);
+        add_action('manage_smin_immobilie_posts_custom_column', 'custom_book_column', 10, 2);
+        function custom_book_column($column, $post_id)
+        {
+            switch ($column) {
 
+                case 'title':
+                    get_the_title($post_id) . ' – ' . get_field('kurztext', $post_id);
+
+                    break;
+
+            }
+        }
     }
 
     public function register_blocks()
