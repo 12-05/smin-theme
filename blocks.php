@@ -21,7 +21,7 @@ class SMIN_Blocks
             switch ($column) {
 
                 case 'post_title':
-                    echo get_the_title($post_id) . ' – ' . get_field('kurztext', $post_id);
+                    echo '<a href="' . get_edit_post_link($post_id) . '">' . get_the_title($post_id) . ' – ' . get_field('kurztext', $post_id) . '</a>';
                     break;
                 case 'thumbnail':
                     echo '<img src="' . wp_get_attachment_image_src(get_field('thumbnail', $post_id), 'medium')[0] . '" alt="thumbnail" class="thumbnail" />';
