@@ -8,6 +8,15 @@ class SMIN_Blocks
         add_action('enqueue_block_editor_assets', array($this, 'load_assets'));
         add_filter('acf/fields/relationship/result', array($this, 'render_immo_title'), 10, 4);
         add_action('manage_smin_immobilie_posts_custom_column', 'custom_book_column', 10, 2);
+        add_filter('manage_smin_immobilie_posts_columns', 'set_custom_edit_book_columns');
+        function set_custom_edit_book_columns($columns)
+        {
+            unset($columns['author']);
+            $columns['book_author'] = __('Author', 'your_text_domain');
+            $columns['publisher'] = __('Publisher', 'your_text_domain');
+
+            return $columns;
+        }
         function custom_book_column($column, $post_id)
         {
             switch ($column) {
