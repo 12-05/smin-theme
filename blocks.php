@@ -11,9 +11,9 @@ class SMIN_Blocks
         add_filter('manage_smin_immobilie_posts_columns', 'set_custom_edit_book_columns');
         function set_custom_edit_book_columns($columns)
         {
-            unset($columns['author']);
-            $columns['post_title'] = __('title', 'your_text_domain');
-
+            $columns = array();
+            $columns['thumbnail'] = __('Vorschau', 'your_text_domain');
+            $columns['post_title'] = __('Titel', 'your_text_domain');
             return $columns;
         }
         function custom_book_column($column, $post_id)
@@ -22,6 +22,10 @@ class SMIN_Blocks
 
                 case 'post_title':
                     get_the_title($post_id) . ' – ' . get_field('kurztext', $post_id);
+                    break;
+                case 'thumbnail':
+                    $thumbnailURL = wp_get_attachment_image_src(get_field('logo', $company->ID), 'medium')[0];
+                    echo '<img src="' . $thumbnailURL . '" style="width:100px;height:auto;">';
                     break;
 
             }
