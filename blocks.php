@@ -14,7 +14,6 @@ class SMIN_Blocks
 
                 case 'title':
                     get_the_title($post_id) . ' – ' . get_field('kurztext', $post_id);
-
                     break;
 
             }
