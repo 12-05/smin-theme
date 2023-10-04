@@ -24,7 +24,7 @@ class SMIN_Blocks
                     get_the_title($post_id) . ' – ' . get_field('kurztext', $post_id);
                     break;
                 case 'thumbnail':
-                    $thumbnailURL = wp_get_attachment_image_src(get_field('logo', $company->ID), 'medium')[0];
+                    $thumbnailURL = wp_get_attachment_image_src(get_field('logo', $post_id), 'medium')[0];
                     echo '<img src="' . $thumbnailURL . '" style="width:100px;height:auto;">';
                     break;
 
