@@ -21,7 +21,7 @@ class SMIN_Blocks
         {
             switch ($column) {
 
-                case 'title':
+                case 'post_title':
                     get_the_title($post_id) . ' – ' . get_field('kurztext', $post_id);
                     break;
 
