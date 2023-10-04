@@ -109,7 +109,8 @@ class SMIN_Blocks
 
     public function render_immo_title($text, $post, $field, $post_id)
     {
-        return $text . " - " . get_field('kurztext', $post_id);
+        $thumbnail = get_field('thumbnail', $post_id) ? "" : "(Kein Bild)";
+        return $text . " - " . get_field('kurztext', $post_id) . ' ' . $thumbnail;
     }
 }
 new SMIN_Blocks();
